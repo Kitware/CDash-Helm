@@ -2,6 +2,26 @@ apiVersion: v1
 entries:
   cdash:
   - apiVersion: v2
+    appVersion: 5.2.0
+    created: "2026-08-31T13:33:03.988453443Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 16.3.5
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 14.10.3
+    description: CDash aggregates, analyzes and displays the results of software testing
+      processes
+    digest: 4823595cc20b28fd496286ffa61fffb2c0f39a1f1f3d69a13591fc4db54f7b0b
+    name: cdash
+    type: application
+    urls:
+    - https://github.com/Kitware/helm/releases/download/cdash-0.18.0/cdash-0.18.0.tgz
+    version: 0.18.0
+  - apiVersion: v2
     appVersion: 5.1.0
     created: "2026-08-24T12:19:18.17070132Z"
     dependencies:
@@ -201,4 +221,4 @@ entries:
     urls:
     - https://github.com/Kitware/helm/releases/download/cdash-0.8.1/cdash-0.8.1.tgz
     version: 0.8.1
-generated: "2026-08-24T12:19:18.170745092Z"
+generated: "2026-08-31T13:33:03.988510584Z"
